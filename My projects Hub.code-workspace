@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../../website"
+		},
+		{
+			"path": "../../FNB APP ACADEMY OF THE YEAR 2025"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../web dev"
+		},
+		{
+			"path": "../../../Downloads/homeverse-master"
+		},
+		{
+			"path": "../../Real-Estate-properties"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "side projects"
+	}
+}

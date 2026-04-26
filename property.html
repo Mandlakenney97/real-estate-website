@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--internal styling -->
+    <style>
+        @import url('https:fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #ededed;
+            color: black;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #081b29;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+
+        .logo a {
+            font-size: 25px;
+            color: lightskyblue;
+            text-decoration: none;
+            margin-left: 35px;
+        }
+
+        .navbar a {
+          font-size: 18px;
+          color: #ededed;
+          text-decoration: none;
+          margin-left: 35px;
+        }
+
+        .navbar a:hover {
+          color: lightskyblue;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            animation: showRight 1s ease forwards;
+            animation-delay: .5s;
+        }
+
+        /*Footer section*/
+        .footer {
+            background-color: #081b29;
+            color: #ededed;
+            padding: 60px 20px 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+     <header class="header">
+           <a href="#" class="logo">ArmorHeights</a>
+
+           <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="property.html">Properties</a>
+                <a href="contact.html">Contact</a>
+           </nav>
+     </header><br>
+
+     <!-- Main Content -->
+    <section class="property-hero">
+        <h1>Our Properties</h1>
+        <p>Browse our selection of luxury properties for sale or rent</p>
+
+        <div class="property-list">
+            <div class="property">
+                <img src="images/solo mandate.png" width="350" alt="Property" title="solo mandate">
+                <h2>Property1 </h2>
+                <p>location: 123 Main st, Armor heights Real Estate, South Africa</p>
+                <p>Price: R8,000,000</p>
+                <button style="color: lightskyblue;">View Details</button>
+            </div>
+
+            <div class="property">
+                <img src="images/prestigious serengeti estate.png" width="350" alt="Property 2">
+                <h2>Property2 </h2>
+                <p>location: 123 Main st, Armor heights Real Estate, South Africa</p>
+                <p>Price: R11,000,000</p>
+                <button>View Details</button>
+
+            <div class="property">
+                <img src="images/serengeti lifestyle estate.png" width="350" alt="Property 3">
+                <h2>Property3 </h2>
+                <p>location: 123 Main st, Armor heights Real Estates , South Africa</p>
+                <p>Price: R15,000,000</p>
+                <button>View Details</button>
+
+            <div class="property">
+               <img src="images/serengeti golf estate.png"  width="350" alt="Property 5">
+               <h2>Property4 </h2>
+               <p>location: 123 Main st, Armor heights Real Estate, South Africa</p>
+               <p>Price: R19,000,OOO</>
+            <button>View Details</button>
+
+            <div class="property">
+                <img src="images/real home.png" width="350" alt="Property 5">
+                <h2>Property5 </h2>
+                <p>location: 123 Main st, Armor heights Real Estate, South Africa 12345</p>
+                <p>Price: R65,000,000</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="property">
+                <img src="images/frontview.png" width="350" alt="Property 5">
+                <h2>Property5 </h2>
+                <p>location: 123 Main st, Armor heights Real Estate, South Africa 12345</p>
+                <p>Price: R65,000,000</p>
+            <button>View Details</button>
+        </div>
+    </section><br><br>
+
+     <!-- Footer section -->
+     <footer class="section">
+         <div class="footer-container">
+            <div class="about-us">
+                <img src="images/Armor Heights  Real Estate Logo.png" width="80" alt="armor height real estate" title="ArmorHeights">
+                <p>we are committed to delivering exceptional services and solutions that will help our clients achieve goals.</p>
+            </div>
+
+            <!--Contact Information -->
+            <div class="footer-section-contact-information">
+                <h3>Contact Us</h3>
+                <address>Aero Dale, new suite, sandhurst, Johannesburg, 2000</address>
+
+                <div class="contact-info">
+                    <p><strong>email: <a href="mailto:info@ArmorHeights.com">info@ArmorHeights.com</a></strong></p>
+                    <p><strong>phone: <a href="tel: +27158935462">+27158935462</a></strong></p>
+                    <p><strong>mobile: <a href="tel: +27609593099">+27609593099</a></strong></p>
+                </div>
+            </div>
+
+            <!-- Quick links -->
+            <div class="footer-quick-links">
+                <h3>Quick links</h3>
+                <p class="footer-company">Company</p>
+                    <a href="#">About</a>
+                    <a href="#">Explore</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact us</a><br>
+
+                    <p class="footer-service">Services</p>
+                    <a href="#">Properties</a>
+                    <a href="#">Terms & conditions</a><br>
+                             
+                    <p class="footer-customer-care">Customer Care</p>
+
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact us</a>
+              </div>
+
+              <!-- Footer section -->
+               <div class="footer-section">
+                    <p>&copy; 2026 Armor heights. all rights reserved </p>
+               </div>
+         </div>
+     </footer>
+</body>
+</html>
